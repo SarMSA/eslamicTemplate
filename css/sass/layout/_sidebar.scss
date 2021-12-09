@@ -1,0 +1,104 @@
+
+.section-1 {
+    padding: 0;
+    ul.sidebar {
+        li{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: $mainColor;
+            opacity: 0.8;
+            margin-bottom: 10px;
+            @media (min-width: 991px) {
+                &:hover{
+                    opacity: 1;
+                    cursor: pointer;
+                    color: $mixColor;
+                    transform: translateX(10px);
+                    @if $language == rtl {
+
+                        transform: translateX(-10px);
+                        
+                    }
+                    background-color: white;
+                    border-radius: 44px;
+                }
+                &:hover .icon{
+                    background-color: $mixColor;
+                    color: white;
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                color: $mainColor;
+                &:hover{
+                    text-decoration: none;
+                    color: $mixColor;
+                }
+
+            }
+            .icon {
+                width: 40px;
+                height: 40px;
+                background-color: $mainColor;
+                border-radius: 50%;
+                color: $subColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px; //left in arabic
+                @if $language == rtl {
+                    margin-right: 0;
+                    margin-left: 10px
+                }
+                
+                i {
+                    font-size: 1.2rem;
+                }
+            } 
+        }
+    }
+    
+    @media (max-width: 991px) {
+        position: fixed;
+        z-index: 9999;
+        background-color: $subColor;
+        height: 100%;
+        top: 0;
+        @if $language == ltr {
+
+            left: -513px;
+            border-right: 2px solid $mainColor;
+
+        }
+        @if $language == rtl {
+
+            right: -513px;
+            border-left: 2px solid $mainColor;
+
+        }
+        padding: 20px;
+        max-width: 40% !important;
+        transition: none;
+        #toggler {
+            display: none;
+            transition: none;
+            
+        }
+        li#language {
+            @if $language == rtl {
+
+                text-align: right;
+            }
+        }
+        #bar-return {
+            color: $mainColor;
+            text-align: $text-right;
+        }
+    }
+    @media (max-width: 750px) {
+        max-width: 60% !important;
+        
+    }
+}

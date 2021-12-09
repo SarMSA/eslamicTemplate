@@ -1,0 +1,52 @@
+* {
+    font-family: 'AmpleSoft Pro';
+    transition: all 0.5s ease;
+}
+body {
+	background-color: $subColor;
+}
+html {
+	direction: $language;
+}
+.container {
+	@media #{$minSmall} {
+		max-width: 750px !important;	
+	}
+	@media #{$minmedium} {
+		max-width: 970px !important;
+	}
+	@media #{$minlarge} {
+		max-width: 1400px !important;
+	}
+}
+hr {
+	margin-top: 0;
+	box-shadow: 0 0 20px 1px $mainColor;
+}
+.text-center-xs {
+	@media(max-width: 768px){
+	text-align: center;
+	}
+}
+.page_content {
+	padding: 20px;
+}
+.clear {
+	clear: both;
+}
+.gray {
+	color: gray!important;
+}
+.text-success {
+	color:$mixColor !important;
+}
+.btn-success {
+	background-color:$mixColor !important;
+	border: none;
+	&:hover{
+		border: none;
+	}
+	&:focus{
+		box-shadow: none!important;
+	}
+}

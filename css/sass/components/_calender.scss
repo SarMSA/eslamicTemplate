@@ -1,0 +1,61 @@
+.calender {
+    // border: 1px solid $mainColor;
+    background: url('../images/mandala-illustration_53876-81805.jpg');
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 0 5px $mainColor;
+    @media (min-width: 1200px) {
+        &:hover{
+        box-shadow: 0 0 15px $mainColor;
+        transform: scale(1.008);
+        }
+    }
+    .timer-text {
+        padding-left: 0.5rem;
+        @if ($language == rtl) {
+            padding-left: 0;
+            padding-right: 0.5rem;
+
+            
+        }
+    }
+    .date {
+        text-align: $text-right;
+    }
+    td {
+        text-align: center;
+        padding: 10px;
+    }
+    td:first-of-type,td:nth-of-type(3),td:last-of-type{
+        background-color: $mainColor;
+        color: $subColor;
+    }
+    td:nth-of-type(2),td:nth-of-type(4) {
+        background-color: $subColor;
+    }
+    img {
+        width: 40px;
+        height: 60px;
+        @if $language == rtl {
+            
+            transform: rotateY(180deg);
+        }
+    }
+    .down {
+        cursor: pointer;
+        color:$mixColor;
+    }
+    #location {
+        border-top: 1px solid $mixColor;
+        display: none;
+        transition: none;
+        padding: 15px 15px 0;
+        margin-top: 15px;
+        select {
+            padding: 5px;
+            border: 0;
+            box-shadow: 0 0 5px $mainColor;
+            color: $mainColor;
+        }
+    }
+}

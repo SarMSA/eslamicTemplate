@@ -1,0 +1,95 @@
+.navbar-light {
+    background-color: white !important;
+    .container { 
+        // border-bottom: 1px solid $mainColor;
+        ul.navbar-nav {
+            margin-left: auto;
+            @if $language == rtl {
+                margin-left: 0;
+                margin-right: auto;
+                
+            }
+            li.nav-item:hover {
+                cursor: pointer;
+            }
+        }
+        .navbar-nav .nav-link {
+            color: $mainColor!important;
+            &:hover{
+                color: $mixColor!important;
+            }
+            
+        }
+    }
+}
+/* start SignIn */
+section.signUp {
+    display: none;
+}
+
+section.signIn {
+
+    display: none;
+}
+
+section.signUp,
+section.signIn {
+    position: fixed;
+    color: #969BAD;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    align-items: center;
+}
+
+.signUp div.container,
+.signIn div.container {
+    width: 90%;
+    max-width: 450px !important;
+    background-color: #fff;
+    padding: 50px 30px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.signIn h3,
+.signUp h3 {
+    color: rgb(64, 69, 83);
+}
+
+.signIn .bold,
+.signUp .bold {
+    font-weight: 800;
+}
+
+.signIn .form-control,
+.signUp .form-control {
+    border: none !important;
+    border-bottom: 1px solid #ced4da !important;
+}
+
+.signIn .form-control:focus,
+.signUp .form-control:focus {
+    box-shadow: none !important;
+}
+
+.signIn a:hover,
+.signUp a:hover {
+    text-decoration: none;
+}
+
+.signIn i,
+.signUp i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    @if $language == rtl {
+    left: 20px;
+    text-align: left!important;
+
+    }
+}
+
+/* end SignIn */

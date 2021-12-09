@@ -1,0 +1,666 @@
+<html lang="an">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/all.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/homepage.css">
+	<title>sass.project</title>
+</head>
+
+<body>
+	<!-- start login -->
+	<section class="signIn">
+		<div class="container text-center">
+			<i class="fas fa-times close"></i>
+			<h3>Welcome back!</h3>
+			<h3 class="bold">Sign in to your account</h3>
+			<p>Don't have an account? <span class="text-primary" id="signUp">Sign Up</span></p>
+			<form class='text-left' method="POST" action="" enctype="">
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label"><span class="text-danger">*</span> Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-4">
+					<label for="exampleInputPassword1" class="form-label"><span class="text-danger">*</span>
+						Password</label>
+					<input type="password" class="form-control" name="" value='' id="exampleInputPassword1">
+				</div>
+				<div class="mb-1 pt-2 text-center">
+					<p><a class="text-primary" href="#">Forget your password?</a></p>
+				</div>
+				<input type="hidden" name="" value="">
+				<div class="submit text-center">
+					<button type="submit"
+						class="btn btn-outline-primary btn-lg btn-block border-0 text-uppercase font-weight-bold">Sign
+						in</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- end login -->
+	<!-- start signUp -->
+	<section class="signUp">
+		<div class="container text-center">
+			<i class="fas fa-times close"></i>
+			<h3 class="bold">create an account</h3>
+			<p>Already have an account? <span class="text-primary" id="signIn">Sign In</span></p>
+			<form class='text-left' method="POST" action="" enctype="">
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label"><span class="text-danger">*</span>First
+						Name</label>
+					<input type="text" class="form-control" name="" value=''>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label"><span class="text-danger">*</span>Last
+						Name</label>
+					<input type="text" class="form-control" name="" value=''>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label"><span class="text-danger">*</span> Email</label>
+					<input type="email" class="form-control" name="email" value='' aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label"><span class="text-danger">*</span>
+						Password</label>
+					<input type="password" class="form-control" name="password" value=''>
+				</div>
+				<input type="hidden" name="signUp" value="signUp">
+				<div class="submit text-center">
+					<button type="submit"
+						class="btn btn-outline-primary btn-lg btn-block border-0 text-uppercase font-weight-bold">creat
+						an account</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- end signUp -->
+	<!-- start navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="nav-link d-lg-none btn btn-success mb-2" id="button-signIn"><i class="fas fa-user"></i>
+				Login
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-globe"></i> Language
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" id="english">English</a>
+							<a class="dropdown-item" href="index_ar.html" id="arabic">العربية</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<span class="nav-link" id="button-signIn"><i class="fas fa-user"></i> Login </span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navbar -->
+	<div class="container page_content">
+		<div class="row">
+			<!-- start sidebar  -->
+			<div class="col-12 col-lg-2 section-1">
+				<ul class="sidebar list-unstyled">
+					<div id="bar-return" class="d-lg-none">
+						<i class="fas fa-bars fa-2x"></i>
+					</div>
+					<li class="nav-item d-block d-lg-none" id="language">
+						<div class="language">
+							<div class=" icon d-inline-flex">
+								<i class="fas fa-globe"></i>
+							</div>Language <i class="fas fa-chevron-down"></i>
+						</div>
+
+						<div id="toggler" class="px-2">
+							<a class="dropdown-item" href="#" id="english">English</a>
+							<a class="dropdown-item" href="index_ar.html" id="arabic">العربية</a>
+						</div>
+					</li>
+					<li>
+						<a href="index.html">
+							<div class="icon">
+								<i class="fas fa-home"></i>
+							</div>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="articles.html">
+							<div class="icon">
+								<i class="fas fa-newspaper"></i>
+							</div>
+							Articles
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="icon">
+								<i class="fas fa-book"></i>
+							</div>
+							Books
+						</a>
+					</li>
+					<li>
+						<a href="audio.html">
+							<div class="icon">
+								<i class="fas fa-microphone"></i>
+							</div>
+							Audio
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="icon">
+								<i class="fas fa-video"></i>
+							</div> Video
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end sidebar  -->
+			<!-- start content  -->
+			<div class="col-12 col-lg-10 section-2">
+				<div class="row">
+					<div class="col-1 d-lg-none togglerP">
+						<div id="bar">
+							<i class="fas fa-bars fa-2x"></i>
+						</div>
+					</div>
+					<div class="col-11 col-lg-12">
+						<form class="d-flex">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-main" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-xl-8 order-1 order-xl-0 sect-content">
+						<div class="content info p-3 mb-3">
+							<div class="header d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="img">
+										<img src="images/default.png" alt="">
+									</div>
+									<div class="name">
+										<h6 class="text-capitalize gray">mohammad ahmed</h6>
+										<h6 class="text-success">Al-Mus'haf Al-Murattal - Hafs from 'Aasem</h6>
+									</div>
+								</div>
+								<div class="gray">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle gray" type="button" id="dropdownMenuButton"
+											data-toggle="dropdown" aria-expanded="false">
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+									<span>Since 2014-09-06</span>
+								</div>
+							</div>
+							<div class="audio  my-3">
+								<h5 class="p-2" id="nameSurat">Sûrat Az-Zukhruf (The Gold Adornment)</h5>
+								<audio controls class="w-100" id="playAudio">
+									<source src="audio/112.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+							</div>
+							<div class="audio-info py-3 d-flex justify-content-between gray align-items-center">
+								<div class="like">
+									<span><i class="far fa-thumbs-up"></i> 3,216</span>
+									<span><i class="far fa-eye"></i> 1,908,727</span>
+								</div>
+								<div class="share">
+									<button class="btn btn-success rounded-pill">
+										share <i class="fas fa-share-alt"></i>
+									</button>
+								</div>
+							</div>
+							<div class="other-audio">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-2">
+								<span class="text-primary view-all">View All</span>
+							</div>
+						</div>
+						<div class="content info p-3 mb-3">
+							<div class="header d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="img">
+										<img src="images/default.png" alt="">
+									</div>
+									<div class="name">
+										<h6 class="text-capitalize gray">mohammad ahmed</h6>
+										<h6 class="text-success">Al-Mus'haf Al-Murattal - Hafs from 'Aasem</h6>
+									</div>
+								</div>
+								<div class="gray">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle gray" type="button" id="dropdownMenuButton"
+											data-toggle="dropdown" aria-expanded="false">
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+									<span>Since 2014-09-06</span>
+								</div>
+							</div>
+							<div class="audio  my-3">
+								<h5 class="p-2" id="nameSurat">Sûrat Az-Zukhruf (The Gold Adornment)</h5>
+								<audio controls class="w-100" id="playAudio">
+									<source src="audio/112.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+							</div>
+							<div class="audio-info py-3 d-flex justify-content-between gray align-items-center">
+								<div class="like">
+									<span><i class="far fa-thumbs-up"></i> 3,216</span>
+									<span><i class="far fa-eye"></i> 1,908,727</span>
+								</div>
+								<div class="share">
+									<button class="btn btn-success rounded-pill">
+										share <i class="fas fa-share-alt"></i>
+									</button>
+								</div>
+							</div>
+							<div class="other-audio">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-2">
+								<span class="text-primary view-all">View All</span>
+							</div>
+						</div>
+						<div class="content info p-3 mb-3">
+							<div class="header d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="img">
+										<img src="images/default.png" alt="">
+									</div>
+									<div class="name">
+										<h6 class="text-capitalize gray">mohammad ahmed</h6>
+										<h6 class="text-success">Al-Mus'haf Al-Murattal - Hafs from 'Aasem</h6>
+									</div>
+								</div>
+								<div class="gray">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle gray" type="button" id="dropdownMenuButton"
+											data-toggle="dropdown" aria-expanded="false">
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+									<span>Since 2014-09-06</span>
+								</div>
+							</div>
+							<div class="audio  my-3">
+								<h5 class="p-2" id="nameSurat">Sûrat Az-Zukhruf (The Gold Adornment)</h5>
+								<audio controls class="w-100" id="playAudio">
+									<source src="audio/112.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+							</div>
+							<div class="audio-info py-3 d-flex justify-content-between gray align-items-center">
+								<div class="like">
+									<span><i class="far fa-thumbs-up"></i> 3,216</span>
+									<span><i class="far fa-eye"></i> 1,908,727</span>
+								</div>
+								<div class="share">
+									<button class="btn btn-success rounded-pill">
+										share <i class="fas fa-share-alt"></i>
+									</button>
+								</div>
+							</div>
+							<div class="other-audio">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-2">
+								<span class="text-primary view-all">View All</span>
+							</div>
+						</div>
+						<div class="content info p-3 mb-3">
+							<div class="header d-flex justify-content-between align-items-center">
+								<div class="d-flex">
+									<div class="img">
+										<img src="images/default.png" alt="">
+									</div>
+									<div class="name">
+										<h6 class="text-capitalize gray">mohammad ahmed</h6>
+										<h6 class="text-success">Al-Mus'haf Al-Murattal - Hafs from 'Aasem</h6>
+									</div>
+								</div>
+								<div class="gray">
+									<div class="dropdown">
+										<button class="btn dropdown-toggle gray" type="button" id="dropdownMenuButton"
+											data-toggle="dropdown" aria-expanded="false">
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+									<span>Since 2014-09-06</span>
+								</div>
+							</div>
+							<div class="audio  my-3">
+								<h5 class="p-2" id="nameSurat">Sûrat Az-Zukhruf (The Gold Adornment)</h5>
+								<audio controls class="w-100" id="playAudio">
+									<source src="audio/112.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+							</div>
+							<div class="audio-info py-3 d-flex justify-content-between gray align-items-center">
+								<div class="like">
+									<span><i class="far fa-thumbs-up"></i> 3,216</span>
+									<span><i class="far fa-eye"></i> 1,908,727</span>
+								</div>
+								<div class="share">
+									<button class="btn btn-success rounded-pill">
+										share <i class="fas fa-share-alt"></i>
+									</button>
+								</div>
+							</div>
+							<div class="other-audio">
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-lkhlas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/112.mp3', 'Sûrat Al-lkhlas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat Al-Falaq</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/113.mp3', 'Sûrat Al-Falaq');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+								<div class="d-flex justify-content-between align-items-center mb-1">
+									<h6>Sûrat An-Nas</h6>
+									<div class="d-flex align-items-center">
+										<span class="mx-2">00:53 </span>
+										<i onclick="setPlayer('audio/114.mp3', 'Sûrat An-Nas');"
+											class="far fa-play-circle fa-2x"></i>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-2">
+								<span class="text-primary view-all">View All</span>
+							</div>
+						</div>
+					</div>
+					<!-- start calender -->
+					<div class="col-12 col-xl-4 order-0 order-xl-1 px-xl-0">
+						<div class="calender mb-3">
+							<div class="d-flex mb-3 justify-content-between">
+								<div class="d-flex align-items-center px-2 timer">
+									<div>
+										<img src="images/310342-547483.svg" alt="azaan image">
+									</div>
+									<div class="timer-text">
+										<h4 class="text-success">5:08:32</h4>
+										<span>يتبقى علي الظهر</span>
+									</div>
+								</div>
+								<div class="px-2 date">
+									<h4 class="text-success">24</h4>
+									<span>ربيع الاخر 1443</span>
+								</div>
+							</div>
+							<table class="w-100">
+								<tbody>
+									<tr>
+										<td class="prayer-Fajr next-pray">
+											<span> الفجر</span>
+											<span class="other-pray-time">5:00</span>
+										</td>
+										<td class="prayer-Dhuhr">
+											<span> الظهر</span>
+											<span class="other-pray-time">11:43</span>
+										</td>
+										<td class="prayer-Asr">
+											<span> العصر</span>
+											<span class="other-pray-time">2:36</span>
+										</td>
+										<td class="prayer-Maghrib">
+											<span> المغرب</span>
+											<span class="other-pray-time">4:55</span>
+										</td>
+										<td class="prayer-Isha">
+											<span> العشاء</span>
+											<span class="other-pray-time">6:17</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="d-flex pt-3 justify-content-between mx-2 align-items-center">
+								<div>
+									<i class="fas fa-map-marker-alt fa-2x text-success"> Cairo</i>
+								</div>
+								<div>
+									<span class="down">change <i class="fas fa-chevron-down"></i></span>
+								</div>
+							</div>
+							<div id="location">
+								<div class="row">
+									<div class="col-6">
+										<select name="" id="" class="w-100">
+											<option value="">Egypt</option>
+											<option value="">Saudia Arabia</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<select name="" id="" class="w-100">
+											<option value="">Cairo</option>
+											<option value="">Gada</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end calender -->
+				</div>
+			</div>
+			<!-- end content  -->
+		</div>
+	</div>
+	<script src=" js/jquery-3.6.0.min.js"> </script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+
+</html>

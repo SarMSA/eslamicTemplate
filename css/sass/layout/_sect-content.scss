@@ -1,0 +1,153 @@
+.section-2{
+
+    .togglerP{
+        @if $language ==ltr  {
+            padding-right: 0!important;      
+        }
+        @if $language ==rtl  {
+            padding-left: 0!important;  
+        }
+        #bar{
+            color: $mainColor;
+        }
+    }
+}
+.sect-content {
+    height: fit-content;
+    .content {
+        background-color: white;
+        box-shadow: 0 0 8px -3px #885c62;
+        width: 100%;
+    }
+    .slider {
+        // height: 200px;
+        i {
+            position: absolute;
+            z-index: 2;
+            top: 38%;
+            cursor: pointer;
+            color: gray;
+        }
+
+        i.fa-arrow-circle-left {
+            left: -7px;
+        }
+        i.fa-arrow-circle-right {
+            right: -7px;
+        }
+        p {
+            padding: 5px;
+            background-color: #221c1c52;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            margin: 0;
+            transition: none;
+            @if ($language == rtl){
+                text-align: right;
+            }
+
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        .owl-item{
+            height: 200px;
+        }
+            
+    }
+    .info {
+        img {
+            width: 50px;
+            height: 45px;
+            border-radius: 50%;
+            box-shadow: 0 0 6px $mainColor;
+            padding: 2px;
+        }
+        .header {
+            .img {
+                margin-right: 0.5rem;
+                @if $language ==rtl  {
+                    margin-left: 0.5rem;
+                    margin-right: 0;
+
+                }
+            }
+            .name {
+                text-align: $text-left;
+            }
+            &>div:last-of-type{
+                text-align: $text-right;
+                button:focus {
+                    box-shadow: none!important;
+                }
+            }
+        }
+        // start audio page
+        .audio{
+            h5{
+                border: 1px solid #f1f3f4;
+                border-bottom: none;
+                margin-bottom: 0;
+                text-align: $text-left;
+            }
+            
+            audio {
+                background-color: #f1f3f4;
+            }
+        }
+        .audio-info, .article-info {
+            border-top: 1px solid $lightGray;
+            i {
+                background-color: #f1f3f4;
+                border-radius: 50%;
+                padding: 10px;
+            
+            }
+            .far.fa-thumbs-up:hover{
+                cursor: pointer;
+            }
+            button {
+                color: white;
+                i{
+                    color: white;
+                    background-color: transparent;
+                    padding: 0;
+                }
+            }
+        }
+        .other-audio {
+            height: 165px;
+            border-radius: 5px;
+            &>div{
+                padding: 10px;
+                background-color: #f1f3f4;
+                color: gray;
+                .fa-play-circle:hover{
+                    cursor: pointer;
+                }
+            }
+            overflow: hidden;
+        }
+        .view-all:hover{
+            cursor: pointer;
+        }
+        // end audio page
+        // start article page
+        .text {
+            box-shadow: 0 0 2px gray;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        // end article page
+        // start article=detail page
+        .article-quote {
+            box-shadow: 0 0 2px gray;
+            padding: 10px;
+           
+        }
+        // end article-detail page
+    }
+
+}
