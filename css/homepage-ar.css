@@ -1,86 +1,323 @@
-/*
-Error: Undefined variable: "$text-right".
-        on line 23 of D:/saramahmoud/elamicProject/css/sass/components/_calender.scss
-        from line 10 of D:/saramahmoud/elamicProject/css/homepage-ar.scss
+* {
+  font-family: 'AmpleSoft Pro';
+  transition: all 0.5s ease; }
 
-Backtrace:
-D:/saramahmoud/elamicProject/css/sass/components/_calender.scss:23
-D:/saramahmoud/elamicProject/css/homepage-ar.scss:10
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$text-right\".\A         on line 23 of D:/saramahmoud/elamicProject/css/sass/components/_calender.scss\A         from line 10 of D:/saramahmoud/elamicProject/css/homepage-ar.scss"; }
+body {
+  background-color: #F1F1F1; }
+
+html {
+  direction: rtl; }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px !important; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px !important; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px !important; } }
+
+hr {
+  margin-top: 0;
+  box-shadow: 0 0 20px 1px #547483; }
+
+@media (max-width: 768px) {
+  .text-center-xs {
+    text-align: center; } }
+
+.page_content {
+  padding: 20px; }
+
+.clear {
+  clear: both; }
+
+.gray {
+  color: gray !important; }
+
+.text-success {
+  color: #b54250 !important; }
+
+.btn-success {
+  background-color: #b54250 !important;
+  border: none; }
+  .btn-success:hover {
+    border: none; }
+  .btn-success:focus {
+    box-shadow: none !important; }
+
+.btn-main {
+  background-color: #b54250;
+  color: #f3efef;
+  border-radius: 0; }
+
+.calender {
+  background: url("../images/mandala-illustration_53876-81805.jpg");
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0 0 5px #547483; }
+  @media (min-width: 1200px) {
+    .calender:hover {
+      box-shadow: 0 0 15px #547483;
+      transform: scale(1.008); } }
+  .calender .timer-text {
+    padding-left: 0.5rem;
+    padding-left: 0;
+    padding-right: 0.5rem; }
+  .calender .date {
+    text-align: left; }
+  .calender td {
+    text-align: center;
+    padding: 10px; }
+  .calender td:first-of-type, .calender td:nth-of-type(3), .calender td:last-of-type {
+    background-color: #547483;
+    color: #F1F1F1; }
+  .calender td:nth-of-type(2), .calender td:nth-of-type(4) {
+    background-color: #F1F1F1; }
+  .calender img {
+    width: 40px;
+    height: 60px;
+    transform: rotateY(180deg); }
+  .calender .down {
+    cursor: pointer;
+    color: #b54250; }
+  .calender #location {
+    border-top: 1px solid #b54250;
+    display: none;
+    transition: none;
+    padding: 15px 15px 0;
+    margin-top: 15px; }
+    .calender #location select {
+      padding: 5px;
+      border: 0;
+      box-shadow: 0 0 5px #547483;
+      color: #547483; }
+
+.navbar-light {
+  background-color: white !important; }
+  .navbar-light .container ul.navbar-nav {
+    margin-left: auto;
+    margin-left: 0;
+    margin-right: auto; }
+    .navbar-light .container ul.navbar-nav li.nav-item:hover {
+      cursor: pointer; }
+  .navbar-light .container .navbar-nav .nav-link {
+    color: #547483 !important; }
+    .navbar-light .container .navbar-nav .nav-link:hover {
+      color: #b54250 !important; }
+
+/* start SignIn */
+section.signUp {
+  display: none; }
+
+section.signIn {
+  display: none; }
+
+section.signUp,
+section.signIn {
+  position: fixed;
+  color: #969BAD;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  align-items: center; }
+
+.signUp div.container,
+.signIn div.container {
+  width: 90%;
+  max-width: 450px !important;
+  background-color: #fff;
+  padding: 50px 30px 30px;
+  border-radius: 10px;
+  position: relative; }
+
+.signIn h3,
+.signUp h3 {
+  color: #404553; }
+
+.signIn .bold,
+.signUp .bold {
+  font-weight: 800; }
+
+.signIn .form-control,
+.signUp .form-control {
+  border: none !important;
+  border-bottom: 1px solid #ced4da !important; }
+
+.signIn .form-control:focus,
+.signUp .form-control:focus {
+  box-shadow: none !important; }
+
+.signIn a:hover,
+.signUp a:hover {
+  text-decoration: none; }
+
+.signIn i,
+.signUp i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  left: 20px;
+  text-align: left !important; }
+
+/* end SignIn */
+.section-1 {
+  padding: 0; }
+  .section-1 ul.sidebar li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #547483;
+    opacity: 0.8;
+    margin-bottom: 10px; }
+    @media (min-width: 991px) {
+      .section-1 ul.sidebar li:hover {
+        opacity: 1;
+        cursor: pointer;
+        color: #b54250;
+        transform: translateX(10px);
+        transform: translateX(-10px);
+        background-color: white;
+        border-radius: 44px; }
+      .section-1 ul.sidebar li:hover .icon {
+        background-color: #b54250;
+        color: white; } }
+    .section-1 ul.sidebar li a {
+      display: flex;
+      align-items: center;
+      color: #547483; }
+      .section-1 ul.sidebar li a:hover {
+        text-decoration: none;
+        color: #b54250; }
+    .section-1 ul.sidebar li .icon {
+      width: 40px;
+      height: 40px;
+      background-color: #547483;
+      border-radius: 50%;
+      color: #F1F1F1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      margin-right: 0;
+      margin-left: 10px; }
+      .section-1 ul.sidebar li .icon i {
+        font-size: 1.2rem; }
+  @media (max-width: 991px) {
+    .section-1 {
+      position: fixed;
+      z-index: 9999;
+      background-color: #F1F1F1;
+      height: 100%;
+      top: 0;
+      right: -513px;
+      border-left: 2px solid #547483;
+      padding: 20px;
+      max-width: 40% !important;
+      transition: none; }
+      .section-1 #toggler {
+        display: none;
+        transition: none; }
+      .section-1 li#language {
+        text-align: right; }
+      .section-1 #bar-return {
+        color: #547483;
+        text-align: left; } }
+  @media (max-width: 750px) {
+    .section-1 {
+      max-width: 60% !important; } }
+
+.section-2 .togglerP {
+  padding-left: 0 !important; }
+  .section-2 .togglerP #bar {
+    color: #547483; }
+
+.sect-content {
+  height: fit-content; }
+  .sect-content .content {
+    background-color: white;
+    box-shadow: 0 0 8px -3px #885c62;
+    width: 100%; }
+  .sect-content .slider i {
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    cursor: pointer;
+    color: gray; }
+  .sect-content .slider i.fa-arrow-circle-left {
+    left: -7px; }
+  .sect-content .slider i.fa-arrow-circle-right {
+    right: -7px; }
+  .sect-content .slider p {
+    padding: 5px;
+    background-color: #221c1c52;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    transition: none;
+    text-align: right; }
+  .sect-content .slider:hover {
+    cursor: pointer; }
+  .sect-content .slider .owl-item {
+    height: 200px; }
+  .sect-content .info img {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #547483;
+    padding: 2px; }
+  .sect-content .info .header .img {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0; }
+  .sect-content .info .header .name {
+    text-align: right; }
+  .sect-content .info .header > div:last-of-type {
+    text-align: left; }
+    .sect-content .info .header > div:last-of-type button:focus {
+      box-shadow: none !important; }
+  .sect-content .info .audio h5 {
+    border: 1px solid #f1f3f4;
+    border-bottom: none;
+    margin-bottom: 0;
+    text-align: right; }
+  .sect-content .info .audio audio {
+    background-color: #f1f3f4; }
+  .sect-content .info .audio-info, .sect-content .info .article-info {
+    border-top: 1px solid #d8d8d8; }
+    .sect-content .info .audio-info i, .sect-content .info .article-info i {
+      background-color: #f1f3f4;
+      border-radius: 50%;
+      padding: 10px; }
+    .sect-content .info .audio-info .far.fa-thumbs-up:hover, .sect-content .info .article-info .far.fa-thumbs-up:hover {
+      cursor: pointer; }
+    .sect-content .info .audio-info button, .sect-content .info .article-info button {
+      color: white; }
+      .sect-content .info .audio-info button i, .sect-content .info .article-info button i {
+        color: white;
+        background-color: transparent;
+        padding: 0; }
+  .sect-content .info .other-audio {
+    height: 165px;
+    border-radius: 5px;
+    overflow: hidden; }
+    .sect-content .info .other-audio > div {
+      padding: 10px;
+      background-color: #f1f3f4;
+      color: gray; }
+      .sect-content .info .other-audio > div .fa-play-circle:hover {
+        cursor: pointer; }
+  .sect-content .info .view-all:hover {
+    cursor: pointer; }
+  .sect-content .info .text {
+    box-shadow: 0 0 2px gray; }
+    .sect-content .info .text p {
+      margin-bottom: 0; }
+  .sect-content .info .article-quote {
+    box-shadow: 0 0 2px gray;
+    padding: 10px; }
+
+/*# sourceMappingURL=homepage-ar.css.map */

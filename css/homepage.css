@@ -1,6 +1,3 @@
-/*overlay*/
-/* mixin prefixes */
-/* animation mixin */
 * {
   font-family: 'AmpleSoft Pro';
   transition: all 0.5s ease; }
@@ -9,7 +6,7 @@ body {
   background-color: #F1F1F1; }
 
 html {
-  direction: rtl; }
+  direction: ltr; }
 
 @media (min-width: 768px) {
   .container {
@@ -64,11 +61,9 @@ hr {
       box-shadow: 0 0 15px #547483;
       transform: scale(1.008); } }
   .calender .timer-text {
-    padding-left: 0.5rem;
-    padding-left: 0;
-    padding-right: 0.5rem; }
+    padding-left: 0.5rem; }
   .calender .date {
-    text-align: left; }
+    text-align: right; }
   .calender td {
     text-align: center;
     padding: 10px; }
@@ -79,8 +74,7 @@ hr {
     background-color: #F1F1F1; }
   .calender img {
     width: 40px;
-    height: 60px;
-    transform: rotateY(180deg); }
+    height: 60px; }
   .calender .down {
     cursor: pointer;
     color: #b54250; }
@@ -99,9 +93,7 @@ hr {
 .navbar-light {
   background-color: white !important; }
   .navbar-light .container ul.navbar-nav {
-    margin-left: auto;
-    margin-left: 0;
-    margin-right: auto; }
+    margin-left: auto; }
     .navbar-light .container ul.navbar-nav li.nav-item:hover {
       cursor: pointer; }
   .navbar-light .container .navbar-nav .nav-link {
@@ -161,9 +153,7 @@ section.signIn {
   position: absolute;
   right: 20px;
   top: 20px;
-  font-size: 1.5rem;
-  left: 20px;
-  text-align: left !important; }
+  font-size: 1.5rem; }
 
 /* end SignIn */
 .section-1 {
@@ -181,7 +171,6 @@ section.signIn {
         cursor: pointer;
         color: #b54250;
         transform: translateX(10px);
-        transform: translateX(-10px);
         background-color: white;
         border-radius: 44px; }
       .section-1 ul.sidebar li:hover .icon {
@@ -203,9 +192,7 @@ section.signIn {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 10px;
-      margin-right: 0;
-      margin-left: 10px; }
+      margin-right: 10px; }
       .section-1 ul.sidebar li .icon i {
         font-size: 1.2rem; }
   @media (max-width: 991px) {
@@ -215,25 +202,23 @@ section.signIn {
       background-color: #F1F1F1;
       height: 100%;
       top: 0;
-      right: -513px;
-      border-left: 2px solid #547483;
+      left: -513px;
+      border-right: 2px solid #547483;
       padding: 20px;
       max-width: 40% !important;
       transition: none; }
       .section-1 #toggler {
         display: none;
         transition: none; }
-      .section-1 li#language {
-        text-align: right; }
       .section-1 #bar-return {
         color: #547483;
-        text-align: left; } }
+        text-align: right; } }
   @media (max-width: 750px) {
     .section-1 {
       max-width: 60% !important; } }
 
 .section-2 .togglerP {
-  padding-left: 0 !important; }
+  padding-right: 0 !important; }
   .section-2 .togglerP #bar {
     color: #547483; }
 
@@ -260,8 +245,7 @@ section.signIn {
     bottom: 0px;
     width: 100%;
     margin: 0;
-    transition: none;
-    text-align: right; }
+    transition: none; }
   .sect-content .slider:hover {
     cursor: pointer; }
   .sect-content .slider .owl-item {
@@ -273,20 +257,18 @@ section.signIn {
     box-shadow: 0 0 6px #547483;
     padding: 2px; }
   .sect-content .info .header .img {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0; }
+    margin-right: 0.5rem; }
   .sect-content .info .header .name {
-    text-align: right; }
-  .sect-content .info .header > div:last-of-type {
     text-align: left; }
+  .sect-content .info .header > div:last-of-type {
+    text-align: right; }
     .sect-content .info .header > div:last-of-type button:focus {
       box-shadow: none !important; }
   .sect-content .info .audio h5 {
     border: 1px solid #f1f3f4;
     border-bottom: none;
     margin-bottom: 0;
-    text-align: right; }
+    text-align: left; }
   .sect-content .info .audio audio {
     background-color: #f1f3f4; }
   .sect-content .info .audio-info, .sect-content .info .article-info {
