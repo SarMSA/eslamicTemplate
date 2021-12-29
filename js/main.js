@@ -110,11 +110,11 @@ $(document).ready(function () {
 	})
 	
 });
-function setPlayer(src, name){
-	var audio = document.querySelector("#playAudio");
+function setPlayer(event, src, name){
+	var audio = event.target.parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.querySelector("#playAudio");
 	audio.setAttribute("src", src);
 	audio.play();
-	document.getElementById("nameSurat").innerHTML = name;
+	event.target.parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.querySelector("#nameSurat").innerHTML = name;
 
 }
 // });

@@ -263,61 +263,63 @@ section.signIn {
     cursor: pointer; }
   .sect-content .slider .owl-item {
     height: 200px; }
-  .sect-content .info img {
-    width: 50px;
-    height: 45px;
-    border-radius: 50%;
-    box-shadow: 0 0 6px #547483;
-    padding: 2px; }
-  .sect-content .info .header .img {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0; }
-  .sect-content .info .header .name {
+  .sect-content .info {
     text-align: right; }
-  .sect-content .info .header > div:last-of-type {
-    text-align: left; }
-    .sect-content .info .header > div:last-of-type button:focus {
-      box-shadow: none !important; }
-  .sect-content .info .audio h5 {
-    border: 1px solid #f1f3f4;
-    border-bottom: none;
-    margin-bottom: 0;
-    text-align: right; }
-  .sect-content .info .audio audio {
-    background-color: #f1f3f4; }
-  .sect-content .info .audio-info, .sect-content .info .article-info {
-    border-top: 1px solid #d8d8d8; }
-    .sect-content .info .audio-info i, .sect-content .info .article-info i {
-      background-color: #f1f3f4;
+    .sect-content .info img {
+      width: 50px;
+      height: 45px;
       border-radius: 50%;
-      padding: 10px; }
-    .sect-content .info .audio-info .far.fa-thumbs-up:hover, .sect-content .info .article-info .far.fa-thumbs-up:hover {
-      cursor: pointer; }
-    .sect-content .info .audio-info button, .sect-content .info .article-info button {
-      color: white; }
-      .sect-content .info .audio-info button i, .sect-content .info .article-info button i {
-        color: white;
-        background-color: transparent;
-        padding: 0; }
-  .sect-content .info .other-audio {
-    height: 165px;
-    border-radius: 5px;
-    overflow: hidden; }
-    .sect-content .info .other-audio > div {
-      padding: 10px;
-      background-color: #f1f3f4;
-      color: gray; }
-      .sect-content .info .other-audio > div .fa-play-circle:hover {
+      box-shadow: 0 0 6px #547483;
+      padding: 2px; }
+    .sect-content .info .header .img {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-right: 0; }
+    .sect-content .info .header .name {
+      text-align: right; }
+    .sect-content .info .header > div:last-of-type {
+      text-align: left; }
+      .sect-content .info .header > div:last-of-type button:focus {
+        box-shadow: none !important; }
+    .sect-content .info .audio h5 {
+      border: 1px solid #f1f3f4;
+      border-bottom: none;
+      margin-bottom: 0;
+      text-align: right; }
+    .sect-content .info .audio audio {
+      background-color: #f1f3f4; }
+    .sect-content .info .audio-info, .sect-content .info .article-info {
+      border-top: 1px solid #d8d8d8; }
+      .sect-content .info .audio-info i, .sect-content .info .article-info i {
+        background-color: #f1f3f4;
+        border-radius: 50%;
+        padding: 10px; }
+      .sect-content .info .audio-info .far.fa-thumbs-up:hover, .sect-content .info .article-info .far.fa-thumbs-up:hover {
         cursor: pointer; }
-  .sect-content .info .view-all:hover {
-    cursor: pointer; }
-  .sect-content .info .text {
-    box-shadow: 0 0 2px gray; }
-    .sect-content .info .text p {
-      margin-bottom: 0; }
-  .sect-content .info .article-quote {
-    box-shadow: 0 0 2px gray;
-    padding: 10px; }
+      .sect-content .info .audio-info button, .sect-content .info .article-info button {
+        color: white; }
+        .sect-content .info .audio-info button i, .sect-content .info .article-info button i {
+          color: white;
+          background-color: transparent;
+          padding: 0; }
+    .sect-content .info .other-audio {
+      height: 165px;
+      border-radius: 5px;
+      overflow: hidden; }
+      .sect-content .info .other-audio > div {
+        padding: 10px;
+        background-color: #f1f3f4;
+        color: gray; }
+        .sect-content .info .other-audio > div .fa-play-circle:hover {
+          cursor: pointer; }
+    .sect-content .info .view-all:hover {
+      cursor: pointer; }
+    .sect-content .info .text {
+      box-shadow: 0 0 2px gray; }
+      .sect-content .info .text p {
+        margin-bottom: 0; }
+    .sect-content .info .article-quote {
+      box-shadow: 0 0 2px gray;
+      padding: 10px; }
 
 /*# sourceMappingURL=homepage-ar.css.map */
